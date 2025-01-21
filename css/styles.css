@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: #f3c522;
+}
+
+.navbar {
+    background-color: #db1010;
+}
+.navbar-brand, .nav-link {
+    color: white;
+}
+
+.carousel-item img {
+    height: 390px;
+    object-fit: cover;
+}
+
+section#magazine {
+    background-color: #FFFFFF; /* Blanco */
+}
+
+section#podcast {
+    background-color: #EBEBEB; /* Gris */
+}
+
+.btn-primary {
+    background-color: #db1010;
+    border-color: #db1010;
+}
+.btn-primary:hover {
+    background-color: #600000;
+}
+
+/*
+.podcast-card {
+    border-color: #db1010;
+}*/
+
+footer {
+    background-color: #db1010; /* Rojo oscuro */
+    color: white; /* Amarillo dorado */
+}
