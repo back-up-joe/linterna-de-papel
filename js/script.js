@@ -1,0 +1,26 @@
+// Espera a que el DOM cargue
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtiene todos los enlaces que activan el reproductor de audio
+    const audioLinks = document.querySelectorAll('.play-audio');
+
+    // Obtén el contenedor y el reproductor de audio
+    const audioPlayerContainer = document.getElementById('audio-player-container');
+    const audioPlayer = document.getElementById('audio-player');
+
+    // Itera sobre cada enlace para agregar el evento de clic
+    audioLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Previene el comportamiento por defecto del enlace
+
+            // Obtiene la fuente del archivo de audio desde el atributo data-audio-src
+            const audioSrc = link.getAttribute('data-audio-src');
+
+            // Muestra el reproductor y actualiza la fuente del audio
+            audioPlayerContainer.style.display = 'block';
+            audioPlayer.src = audioSrc;
+
+            // Reproduce el audio automáticamente
+            audioPlayer.play();
+        });
+    });
+});

@@ -20,6 +20,10 @@ body {
     object-fit: cover;
 }
 
+section#nueva-revista {
+    background-color: #EBEBEB; /* Gris */
+}
+
 section#magazine {
     background-color: #FFFFFF; /* Blanco */
 }
@@ -36,15 +40,8 @@ section#podcast {
     background-color: #600000;
 }
 
-/*
-.podcast-card {
-    border-color: #db1010;
-}*/
-
 footer {
-    background-color: #db1010; /* Rojo oscuro */
-    color: white; /* Amarillo dorado */
+    background-color: #db1010;
+    color: white;
 }
-
-
   
