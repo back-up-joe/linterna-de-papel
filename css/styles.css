@@ -28,6 +28,29 @@ section#magazine {
     background-color: #FFFFFF; /* Blanco */
 }
 
+#no-hidden-pdfs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hidden-pdfs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#no-hidden-pdfs .col-md-2 {
+    width: 16.66667%;  /* Mantén el mismo ancho de la columna como en las otras tarjetas */
+    padding-left: 0.5rem;  /* Ajusta el espacio entre las tarjetas */
+    padding-right: 0.5rem; /* Ajusta el espacio entre las tarjetas */
+}
+
+#hidden-pdfs .col-md-2 {
+    width: 16.66667%;  /* Mantén el mismo ancho de la columna como en las otras tarjetas */
+    padding-left: 0.5rem;  /* Ajusta el espacio entre las tarjetas */
+    padding-right: 0.5rem; /* Ajusta el espacio entre las tarjetas */
+}
+
+
 section#podcast {
     background-color: #EBEBEB; /* Gris */
 }
@@ -44,4 +67,4 @@ footer {
     background-color: #db1010;
     color: white;
 }
-  
+
