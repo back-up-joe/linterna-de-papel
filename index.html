@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linterna de Papel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css?v=1.0.0">
+    <link rel="stylesheet" href="css/styles.css?v=1.0.1">
     <link rel="icon" href="img/logo_pc_favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -24,16 +24,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">                    
                     <li class="nav-item px-3"><a class="nav-link" href="#about">PCCh Ñuñoa</a></li>
-                    <li class="nav-item px-3"><a class="nav-link" href="#magazine">Revista</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="#magazine">Revista PDF</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="#podcast">Podcast</a></li>                    
                 </ul>
                 <!-- Reproductor de audio personalizado -->
                 <div class="audio-player d-flex align-items-center ms-3">
-                    <span class="me-2 text-white">N°10</span>
+                    <span class="me-2 text-white">Ed. Esp. VII</span>
                     &nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;
                     <audio id="custom-audio" controls>
-                        <source src="assets/mp3/linterna-de-papel-005.mp3" type="audio/mpeg">
+                        <source src="assets/mp3/linterna-de-papel-ed-esp-vii.mp3" type="audio/mpeg">
                     </audio>
                     &nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;
@@ -76,12 +76,11 @@
 
     <section id="nueva-revista" class="py-5 mb-2">
         <div class="container text-center">
-            <h2 class="mb-4">¡Visita nuestra nueva versión digital!</h2>
+            <h2 class="mb-4">¡Visita nuestra nueva versión magazine!</h2>
             <p class="mb-4">Descubre contenido exclusivo e interesantes artículos en la nueva edición.</p>
-            <a href="https://heyzine.com/flip-book/c8c7ed88f1.html" class="btn btn-primary btn-lg" target="_blank">Linterna de Papel Digital</a>
+            <a href="https://heyzine.com/flip-book/c8c7ed88f1.html" class="btn btn-primary btn-lg" target="_blank">Linterna de Papel Magazine</a>
         </div>
     </section>
-    
 
     <section id="magazine" class="py-5 mb-2">
         <div class="container">
@@ -240,44 +239,32 @@
             <h2 class="text-center mb-4">Linterna de Papel - Podcast</h2>
             <hr>
             <div class="row">
-                <!-- Podcast 5 -->
+                <!-- Podcast 10 -->
                 <div class="col-md-6">
                     <div class="card podcast-card mb-4">
                         <a href="" class="play-audio" data-audio-src="assets/mp3/linterna-de-papel-005.mp3">
                             <img src="img/portadas_podcast/podcast_cover_01.jpg" class="card-img-top" alt="Podcast"></a>
                         <div class="card-body text-center">
-                            <h5 class="card-title text-primary text-black">N°10</h5>
-                        </div>                            
-                    </div>
-                    <!-- Reproductor de audio Podcast 5 -->
-                    <div id="audio-player-container" style="display:none; text-align: center; margin-top: 20px;">
-                        <audio id="audio-player" controls style="width: 100%; max-width: 500px;" controlsList="nodownload">
-                            <source src="" type="audio/mpeg">
-                        </audio>
-                    </div>
+                            <h5 class="card-title text-primary text-black">N°10</h5>                            
+                        </div>                                                   
+                    </div>                    
                 </div>
-
                 <!-- Podcast Ed Esp VII -->
                 <div class="col-md-6">
                     <div class="card podcast-card mb-4">
-                        <a href="" target="_blank">
+                        <a href="" class="play-audio" data-audio-src="assets/mp3/linterna-de-papel-ed-esp-vii.mp3">
                             <img src="img/portadas_podcast/podcast_cover_02.jpeg" class="card-img-top" alt="Podcast"></a>
                         <div class="card-body text-center">
-                            <h5 class="card-title text-primary text-black">Ed. Esp. VII (Próximamente)</h5>
-                        </div>
+                            <h5 class="card-title text-primary text-black">Ed. Esp. VII</h5>
+                        </div>                          
                     </div>
                 </div>
-                <!-- Podcast  -->
-                <!--
-                <div class="col-md-4">
-                    <div class="card podcast-card mb-4">
-                        <a href="" target="_blank">
-                            <img src="img/portadas_podcast/podcast_cover_03.jpg" class="card-img-top" alt="Podcast"></a>
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-primary text-black">Capítulo 3</h5>
-                        </div>
-                    </div>
-                </div> -->
+                <!-- Reproductor de audio Podcast -->
+                <div class="audio-player-container" id="audio-player-container" style="display:none; text-align: center; margin-top: 20px;">
+                    <audio id="audio-player" controls style="width: 100%; max-width: 500px;" controlsList="nodownload">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                </div> 
             </div>
         </div>
     </section>
@@ -290,6 +277,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Enlace al archivo JS -->
-    <script src="js/script.js?v=1.0.0"></script>
+    <script src="js/script.js?v=1.0.1"></script>
 </body>
 </html>

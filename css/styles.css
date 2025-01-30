@@ -21,11 +21,11 @@ body {
 }
 
 section#nueva-revista {
-    background-color: #EBEBEB; /* Gris */
+    background-color: #EBEBEB;
 }
 
 section#magazine {
-    background-color: #FFFFFF; /* Blanco */
+    background-color: #FFFFFF;
 }
 
 #no-hidden-pdfs {
@@ -49,7 +49,6 @@ section#magazine {
     padding-left: 0.5rem;  /* Ajusta el espacio entre las tarjetas */
     padding-right: 0.5rem; /* Ajusta el espacio entre las tarjetas */
 }
-
 
 section#podcast {
     background-color: #EBEBEB; /* Gris */
