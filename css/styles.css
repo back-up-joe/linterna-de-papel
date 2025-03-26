@@ -15,6 +15,10 @@ body {
     color: white;
 }
 
+#carousel {
+    margin-top: 80px; /* Ajusta según la altura del navbar */
+}
+
 .carousel-item img {
     height: 390px;
     object-fit: cover;
@@ -24,8 +28,9 @@ section#nueva-revista {
     background-color: #EBEBEB;
 }
 
-section#magazine {
-    background-color: #FFFFFF;
+section#revista {
+    background-color: #FFFFFF; /* Blanco */
+    /* background-color: #EBEBEB; Gris */
 }
 
 #no-hidden-pdfs {
@@ -51,7 +56,8 @@ section#magazine {
 }
 
 section#podcast {
-    background-color: #EBEBEB; /* Gris */
+    /* background-color: #EBEBEB; Gris */
+    background-color: #FFFFFF;
 }
 
 .btn-primary {
@@ -82,5 +88,9 @@ footer {
         width: 100%;  /* Una tarjeta por fila */
         padding-left: 0.5rem;  /* Espaciado a la izquierda */
         padding-right: 0.5rem;  /* Espaciado a la derecha */
+    }
+
+    section#podcast {
+        margin-top:73px;
     }
 }
