@@ -32,11 +32,11 @@
                 </ul>
                 <!-- Reproductor de audio personalizado -->
                 <div class="audio-player d-flex align-items-center ms-3">
-                    <span class="me-2 text-white">Ed. Esp. VI</span>
+                    <span class="me-2 text-white">N°9</span>
                     &nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;
                     <audio id="custom-audio" controls>
-                        <source src="assets/mp3/linterna-de-papel-ed-esp-vi.mp3" type="audio/mpeg">
+                        <source src="assets/mp3/linterna-de-papel-009.mp3" type="audio/mpeg">
                     </audio>
                     &nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;
@@ -85,9 +85,10 @@
         <div class="container">
             <h4 class="text-center mb-4">Linterna de Papel - Escucha nuestro Podcast</h4>
             <hr>
-            <div class="row">                
+            <div class="row">
+                <p>Clickea en la imagen para escuchar...</p>                
                 <!-- Podcast Ed Esp VII -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card podcast-card mb-4">
                         <a href="" class="play-audio" data-audio-src="assets/mp3/linterna-de-papel-ed-esp-vii.mp3">
                             <img src="img/portadas_podcast/podcast_cover_ed_esp_vii.jpeg" class="card-img-top" alt="Podcast"></a>
@@ -97,7 +98,7 @@
                     </div>
                 </div>
                 <!-- Podcast 10 -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card podcast-card mb-4">
                         <a href="" class="play-audio" data-audio-src="assets/mp3/linterna-de-papel-010.mp3">
                             <img src="img/portadas_podcast/podcast_cover_010.jpg" class="card-img-top" alt="Podcast"></a>
@@ -107,7 +108,7 @@
                     </div>                    
                 </div>
                 <!-- Podcast Ed Esp VI -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card podcast-card mb-4">
                         <a href="" class="play-audio" data-audio-src="assets/mp3/linterna-de-papel-ed-esp-vi.mp3">
                             <img src="img/portadas_podcast/podcast_cover_ed_esp_vi.png" class="card-img-top" alt="Podcast"></a>
@@ -116,7 +117,16 @@
                         </div>                          
                     </div>
                 </div>
-                <p>Clickea en la imagen para escuchar...</p>
+                <!-- Podcast 9 -->
+                <div class="col-md-3">
+                    <div class="card podcast-card mb-4">
+                        <a href="" class="play-audio" data-audio-src="assets/mp3/linterna-de-papel-009.mp3">
+                            <img src="img/portadas_podcast/podcast_cover_009.png" class="card-img-top" alt="Podcast"></a>
+                        <div class="card-body text-center">
+                            <h6 class="card-title text-primary text-black">N°9</h6>
+                        </div>                          
+                    </div>
+                </div>
                 
                 <!-- Reproductor de audio Podcast -->
                 <div class="audio-player-container" id="audio-player-container" style="display:none; text-align: center; margin-top: 20px;">
@@ -152,7 +162,17 @@
             <div class="row">
                 
                 <!-- PDFs visibles (se muestran por defecto) -->
-                <div id="no-hidden-pdfs">                
+                <div id="no-hidden-pdfs">
+                    <!-- PDF Edición especial VIII -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card border-danger">
+                            <a href="assets/pdf/Linterna_de_papel_Edicion_Especial_VIII.pdf" download class="btn btn-primary">
+                            <img src="img/portadas/portada_revista_esp_viii.png" class="card-img-top" alt="Portada de la revista"></a>
+                            <div class="card-body text-center">
+                                <h6 class="card-title text-danger">Ed. Esp. VIII</h6>        
+                            </div>
+                        </div>
+                    </div>
                     <!-- PDF Edición especial VII -->
                     <div class="col-md-2 mb-4">
                         <div class="card border-danger">
@@ -202,7 +222,11 @@
                                 <h6 class="card-title text-danger">N°8</h6>                            
                             </div>
                         </div>
-                    </div>
+                    </div>                    
+                </div>
+
+                <!-- PDFs ocultos (desde Edición Especial V hacia abajo) -->
+                <div id="hidden-pdfs" style="display:none;">
                     <!-- PDF 7 -->
                     <div class="col-md-2 mb-4">
                         <div class="card border-danger">
@@ -213,10 +237,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- PDFs ocultos (desde Edición Especial V hacia abajo) -->
-                <div id="hidden-pdfs" style="display:none;">
                     <!-- PDF Edición especial V -->
                     <div class="col-md-2 mb-4">
                         <div class="card border-danger">
