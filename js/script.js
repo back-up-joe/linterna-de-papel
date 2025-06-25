@@ -1,3 +1,20 @@
+document.getElementById('show-more-btn-podcast').addEventListener('click', function() {
+    var hiddenPods = document.getElementById('hidden-pods');
+    
+    // Verificar si los Podcast ocultos están visibles o no
+    if (hiddenPods.style.display === 'none' || hiddenPods.style.display === '') {
+        // Hacer visible el contenedor de Podcasts ocultos
+        hiddenPods.style.display = 'flex';
+        // Cambiar el texto del botón a "Ver menos..."
+        this.innerText = 'Ver menos...';
+    } else {
+        // Ocultar el contenedor de Podcast ocultos
+        hiddenPods.style.display = 'none';
+        // Cambiar el texto del botón a "Ver más..."
+        this.innerText = 'Ver más...';
+    }
+});
+
 document.getElementById('show-more-btn').addEventListener('click', function() {
     var hiddenPdfs = document.getElementById('hidden-pdfs');
     
