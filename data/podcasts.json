@@ -1,0 +1,34 @@
+{
+  "podcasts": [
+    {
+      "title": "Ed. Esp. VIII",
+      "cover": "img/portadas_podcast/podcast_cover_ed_esp_viii.png",
+      "audio": "assets/mp3/linterna-de-papel-ed-esp-viii.mp3",
+      "visible": true
+    },
+    {
+      "title": "Ed. Esp. VII",
+      "cover": "img/portadas_podcast/podcast_cover_ed_esp_vii.jpeg",
+      "audio": "assets/mp3/linterna-de-papel-ed-esp-vii.mp3",
+      "visible": true
+    },
+    {
+      "title": "N°10",
+      "cover": "img/portadas_podcast/podcast_cover_010.jpg",
+      "audio": "assets/mp3/linterna-de-papel-010.mp3",
+      "visible": true
+    },
+    {
+      "title": "Ed. Esp. VI",
+      "cover": "img/portadas_podcast/podcast_cover_ed_esp_vi.png",
+      "audio": "assets/mp3/linterna-de-papel-ed-esp-vi.mp3",
+      "visible": true
+    },
+    {
+      "title": "N°9",
+      "cover": "img/portadas_podcast/podcast_cover_009.png",
+      "audio": "assets/mp3/linterna-de-papel-009.mp3",
+      "visible": false
+    }
+  ]
+}

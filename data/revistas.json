@@ -1,0 +1,94 @@
+{
+  "revistas": [
+    {
+      "title": "Ed. Esp. IX",
+      "cover": "img/portadas/portada_revista_esp_ix.png",
+      "file": "assets/pdf/Linterna_de_papel_Edicion_Especial_IX.pdf",
+      "visible": true
+    },
+    {
+      "title": "Ed. Esp. VIII",
+      "cover": "img/portadas/portada_revista_esp_viii.png",
+      "file": "assets/pdf/Linterna_de_papel_Edicion_Especial_VIII.pdf",
+      "visible": true
+    },
+    {
+      "title": "Ed. Esp. VII",
+      "cover": "img/portadas/portada_revista_esp_vii.png",
+      "file": "assets/pdf/Linterna_de_papel_Edicion_Especial_VII.pdf",
+      "visible": true
+    },
+    {
+      "title": "N°10",
+      "cover": "img/portadas/portada_revista_10.png",
+      "file": "assets/pdf/Linterna_de_papel_10.pdf",
+      "visible": true
+    },
+    {
+      "title": "Ed. Esp. VI",
+      "cover": "img/portadas/portada_revista_esp_vi.png",
+      "file": "assets/pdf/Linterna_de_papel_Edicion_Especial_VI.pdf",
+      "visible": true
+    },
+    {
+      "title": "N°9",
+      "cover": "img/portadas/portada_revista_9.png",
+      "file": "assets/pdf/Linterna_de_papel_9.pdf",
+      "visible": true
+    },
+    {
+      "title": "N°8",
+      "cover": "img/portadas/portada_revista_8.png",
+      "file": "assets/pdf/Linterna_de_papel_8.pdf",
+      "visible": false
+    },
+    {
+      "title": "N°7",
+      "cover": "img/portadas/portada_revista_7.png",
+      "file": "assets/pdf/Linterna_de_papel_7.pdf",
+      "visible": false
+    },
+    {
+      "title": "Ed. Esp. V",
+      "cover": "img/portadas/portada_revista_esp_v.png",
+      "file": "assets/pdf/Linterna_de_papel_Edicion_Especial_V.pdf",
+      "visible": false
+    },
+    {
+      "title": "N°6",
+      "cover": "img/portadas/portada_revista_6.png",
+      "file": "assets/pdf/Linterna_de_papel_6.pdf",
+      "visible": false
+    },
+    {
+      "title": "N°5",
+      "cover": "img/portadas/portada_revista_5.png",
+      "file": "assets/pdf/Linterna_de_papel_5.pdf",
+      "visible": false
+    },
+    {
+      "title": "N°4",
+      "cover": "img/portadas/portada_revista_4.png",
+      "file": "assets/pdf/Linterna_de_papel_4.pdf",
+      "visible": false
+    },
+    {
+      "title": "N°3",
+      "cover": "img/portadas/portada_revista_3.png",
+      "file": "assets/pdf/Linterna_de_papel_3.pdf",
+      "visible": false
+    },
+    {
+      "title": "N°2",
+      "cover": "img/portadas/portada_revista_2.png",
+      "file": "assets/pdf/Linterna_de_papel_2.pdf",
+      "visible": false
+    },
+    {
+      "title": "N°1",
+      "cover": "img/portadas/portada_revista_1.png",
+      "file": "assets/pdf/Linterna_de_papel_1.pdf",
+      "visible": false
+    }
+  ]
+}
