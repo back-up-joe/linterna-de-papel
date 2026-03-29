@@ -1,13 +1,13 @@
 {
   "lecturas": [
     {
-      "title": "Historia del Comunismo en Chile (Sergio Grez Toso)",
+      "title": "'Historia del Comunismo en Chile' (Sergio Grez Toso)",
       "cover": "img/lecturas/historia-del-comunismo.png",
       "file": "assets/pdf/lecturas/Grez_Historia_del_Comunismo_en_Chile.pdf",
       "visible": true
     },
     {
-      "title": "Reformismo y Revisionismo (Alexandr Fedorovich Okulov)",
+      "title": "'Reformismo y Revisionismo' (Alexandr Fedorovich Okulov)",
       "cover": "img/lecturas/reformismo-y-revisionismo.png",
       "file": "assets/pdf/lecturas/Okulov_Reformismo_y_Revisionismo.pdf",
       "visible": true
