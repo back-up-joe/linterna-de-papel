@@ -34,6 +34,12 @@ document.getElementById('show-more-btn').addEventListener('click', function() {
     }
 });
 
+// Función para configurar el botón "Ver más" de lecturas (no se usa pero la dejamos por si acaso)
+function setupLecturasShowMoreButton() {
+    // Esta función está vacía porque no queremos botón "Ver más" en lecturas
+    console.log('Lecturas cargadas sin botón "Ver más"');
+}
+
 // Espera a que el DOM cargue
 document.addEventListener('DOMContentLoaded', () => {
     // Obtiene todos los enlaces que activan el reproductor de audio
@@ -62,6 +68,51 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Iniciando carga de datos...');
+
+    // Cargar lecturas
+    fetch('data/lecturas.json')
+        .then(response => response.json())
+        .then(data => {
+            const visibleContainer = document.getElementById('no-hidden-lecturas');
+            const hiddenContainer = document.getElementById('hidden-lecturas');
+            
+            // Limpiar contenedores
+            visibleContainer.innerHTML = '';
+            hiddenContainer.innerHTML = '';
+            
+            data.lecturas.forEach(lectura => {
+                const lecturaHTML = `
+                    <div class="col-12 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                        <div class="lectura-card" onclick="window.open('${lectura.file}', '_blank')" style="width: 100%; max-width: 300px;">
+                            <div class="card h-100">
+                                <img src="${lectura.cover}" class="card-img-top" alt="${lectura.title}">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">${lectura.title}</h5>
+                                    <!--
+                                    <button class="btn-download">
+                                        <i class="bi bi-file-pdf"></i> Leer PDF
+                                    </button>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                if (lectura.visible) {
+                    visibleContainer.innerHTML += lecturaHTML;
+                } else {
+                    hiddenContainer.innerHTML += lecturaHTML;
+                }
+            });
+            
+            // Configurar botón "Ver más" para lecturas
+            setupLecturasShowMoreButton();
+        })
+        .catch(error => {
+            console.error('Error cargando lecturas:', error);
+        });
+
     // Cargar podcasts
     fetch('data/podcasts.json')
         .then(response => response.json())

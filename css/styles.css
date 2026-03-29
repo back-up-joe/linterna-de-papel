@@ -30,13 +30,93 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
+section#lecturas {
+    /*background-color: #EBEBEB; Gris */
+    background-color: #FFFFFF; /* Blanco */
+}
+
+/* Estilos para las tarjetas de lecturas */
+#no-hidden-lecturas, #hidden-lecturas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajuste específico para las columnas de lecturas */
+#no-hidden-lecturas > [class*="col-"],
+#hidden-lecturas > [class*="col-"] {
+    display: flex;
+    justify-content: center;
+}
+
+.lectura-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lectura-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.lectura-card .card {
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.lectura-card .card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.lectura-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #db1010;
+}
+
+.lectura-card .card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.lectura-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+}
+
+.lectura-card .btn-download {
+    background-color: #db1010;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.lectura-card .btn-download:hover {
+    background-color: #600000;
+}
+
 section#nueva-revista {
-    background-color: #EBEBEB;
+    /* background-color: #EBEBEB;  Gris*/
+    background-color: #FFFFFF; /* Blanco */
 }
 
 section#revista {
-    background-color: #FFFFFF; /* Blanco */
-    /* background-color: #EBEBEB; Gris */
+    /* background-color: #FFFFFF; Blanco */
+    background-color: #EBEBEB; /* Gris */
 }
 
 #no-hidden-pdfs {
@@ -62,8 +142,8 @@ section#revista {
 }
 
 section#podcast {
-    /* background-color: #EBEBEB; Gris */
-    background-color: #FFFFFF;
+    background-color: #EBEBEB; /* Gris */
+    /* background-color: #FFFFFF; Blanco*/
 }
 
 .btn-primary {
@@ -79,12 +159,27 @@ footer {
     color: white;
 }
 
+/* Responsive para desktop (1200px y más) */
+@media (min-width: 1200px) {
+    #no-hidden-lecturas .col-lg-3,
+    #hidden-lecturas .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
 /* De md a lg (768px a 1199px), mostrar 3 tarjetas por fila */
 @media (min-width: 768px) and (max-width: 1199px) {
     #no-hidden-pdfs .col-md-2,
     #hidden-pdfs .col-md-2 {
         width: 33.33333%;  /* 3 tarjetas por fila */
     }
+
+    /*
+    #no-hidden-lecturas .col-md-3,
+    #hidden-lecturas .col-md-3 {
+        width: 33.33333%;
+    }*/
 }
 
 /* En pantallas más pequeñas (md hacia abajo), cada tarjeta ocupará toda la fila */
@@ -96,7 +191,29 @@ footer {
         padding-right: 0.5rem;  /* Espaciado a la derecha */
     }
 
+    #no-hidden-pdfs .col-md-2,
+    #hidden-pdfs .col-md-2 {
+        width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #no-hidden-lecturas .col-12,
+    #hidden-lecturas .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    .lectura-card .card-img-top {
+        height: 200px;
+    }
+
+    section#lecturas {
+        margin-top: 73px;
+    }
+
+    /*
     section#podcast {
         margin-top:73px;
-    }
+    }*/
 }
