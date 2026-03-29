@@ -31,8 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section#lecturas {
-    /*background-color: #EBEBEB; Gris */
-    background-color: #FFFFFF; /* Blanco */
+    background-color: #EBEBEB; /* Gris */
+    /* background-color: #FFFFFF; Blanco */
 }
 
 /* Estilos para las tarjetas de lecturas */
@@ -110,13 +110,13 @@ section#lecturas {
 }
 
 section#nueva-revista {
-    /* background-color: #EBEBEB;  Gris*/
-    background-color: #FFFFFF; /* Blanco */
+    background-color: #EBEBEB; /* Gris */
+    /* background-color: #FFFFFF; Blanco */
 }
 
 section#revista {
-    /* background-color: #FFFFFF; Blanco */
-    background-color: #EBEBEB; /* Gris */
+    background-color: #FFFFFF; /* Blanco */
+    /* background-color: #EBEBEB; Gris */
 }
 
 #no-hidden-pdfs {
@@ -142,8 +142,8 @@ section#revista {
 }
 
 section#podcast {
-    background-color: #EBEBEB; /* Gris */
-    /* background-color: #FFFFFF; Blanco*/
+    /* background-color: #EBEBEB; Gris */
+    background-color: #FFFFFF; /* Blanco */
 }
 
 .btn-primary {
